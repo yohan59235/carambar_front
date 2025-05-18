@@ -6,11 +6,17 @@ import { UserProvider } from "../UserContext";
 
 import App from "./App";
 import Home from "../src/Pages/Home/Home";
+import JokesList from "../src/components/JokesList/JokesList";
+import AddJokesForm from "./components/AddJokesForm/AddJokesForm";
 
 const router = createBrowserRouter([
   {
     element: <App />,
-    children: [{ path: "/", element: <Home /> }],
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/blague", element: <JokesList /> },
+      { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
+    ],
   },
 ]);
 
