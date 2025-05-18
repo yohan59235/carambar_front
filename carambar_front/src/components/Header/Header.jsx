@@ -14,7 +14,9 @@ function Header() {
       <div>
         <p>Choisis une blague par son numéro</p> <input type="number" />
       </div>
-      <input type="button" value="Afficher les blagues par catégories" />
+      <Link to="/Catégorie">
+        <input type="button" value="Afficher les blagues par catégories" />
+      </Link>
       <Link to="/Ajouter_une_blague">
         <input type="button" value="Ajoute une de tes blagues" />
       </Link>

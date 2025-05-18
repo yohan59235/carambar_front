@@ -4,6 +4,7 @@ import { createContext, useState, useMemo, useEffect } from "react";
 const UserContext = createContext();
 
 export function UserProvider({ children }) {
+  const [nom, setNom] = useState();
   const [userId, setUserId] = useState(null);
 
   const [user, setUser] = useState({
@@ -22,6 +23,8 @@ export function UserProvider({ children }) {
       setUser,
       userId,
       setUserId,
+      nom,
+      setNom,
     }),
     [user]
   );

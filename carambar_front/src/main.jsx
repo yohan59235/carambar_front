@@ -8,6 +8,7 @@ import App from "./App";
 import Home from "../src/Pages/Home/Home";
 import JokesList from "../src/components/JokesList/JokesList";
 import AddJokesForm from "./components/AddJokesForm/AddJokesForm";
+import JokesCategory from "./components/JokesCategory/JokesCategory";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/blague", element: <JokesList /> },
       { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
+      { path: "/Catégorie", element: <JokesCategory /> },
     ],
   },
 ]);
