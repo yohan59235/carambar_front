@@ -21,15 +21,16 @@ function JokesByCategory() {
   }, []);
 
   return (
-    <div>
+    <div className="Jokes_Category_Container">
       <h2>Blagues de la catégorie : {nom}</h2>
       {jokes.length === 0 ? (
         <p>Aucune blague dans cette catégorie</p>
       ) : (
         jokes.map((joke) => (
-          <div key={joke.id}>
+          <div className="Joke_Container" key={joke.id}>
             <h3>- {joke.question}</h3>
             <p>{joke.reponse}</p>
+            <hr />
           </div>
         ))
       )}
