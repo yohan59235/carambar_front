@@ -19,10 +19,12 @@ function JokesCategory() {
   }, []);
 
   return (
-    <div>
+    <div className="Category_Container">
       {jokesCategory.map((category, index) => (
         <Link to={`/categorie/${category}`}>
-          <button key={index}>{category}</button>
+          <button className="Category_Button" key={index}>
+            {category}
+          </button>
         </Link>
       ))}
     </div>
