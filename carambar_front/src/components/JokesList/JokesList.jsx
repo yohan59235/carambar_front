@@ -18,12 +18,13 @@ function JokesList() {
   }, []);
 
   return (
-    <div>
+    <div className="Jokes_Category_Container">
       {allJokes.map((joke) => (
-        <div key={joke}>
+        <div className="Joke_Container" key={joke}>
           <h3>({joke.categorie})</h3>
           <h2>-{joke.question}</h2>
           <p>{joke.reponse}</p>
+          <hr />
         </div>
       ))}
     </div>
