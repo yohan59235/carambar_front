@@ -32,15 +32,13 @@ function Home() {
   return (
     <div>
       {joke ? (
-        <div>
-          <div>
-            <div>
-              <h4>{joke.categorie}</h4>
-              <h2>{joke.question}</h2>
-            </div>
+        <div className="Random_Container">
+          <div className="Random_Joke_Infos">
+            <h4>Catégorie: {joke.categorie}</h4>
+            <h2>{joke.question}</h2>
             <p>{joke.reponse}</p>
           </div>
-          <div>
+          <div className="Random_Button">
             <button
               type="button"
               onClick={refreshPage}

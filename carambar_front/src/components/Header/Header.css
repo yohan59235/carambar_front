@@ -219,14 +219,45 @@
 }
 
 @media screen and (min-width: 1660px) {
+  .First_Line_Onglets,
+  .Second_Line_Onglets {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 31.15rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 62.3rem;
+  }
+
   .First_Line_Onglets > a > input,
   .Second_Line_Onglets > a > input,
   .Last_Line_Onglets > a > input {
-    width: 46.7rem;
-    height: 6.35rem;
+    height: 7.7rem;
   }
 
   .Header_Image {
-    width: 55%;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1760px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 36rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 72rem;
+  }
+
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input,
+  .Last_Line_Onglets > a > input {
+    height: 8.8rem;
   }
 }

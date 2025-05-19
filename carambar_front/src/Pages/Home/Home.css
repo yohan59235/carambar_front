@@ -1,0 +1,75 @@
+.Random_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Random_Button > button {
+  background-color: antiquewhite;
+  border: none;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 8px 13px -7px #000000, 0px 0px 8px -3px #000000;
+  box-shadow: 0px 8px 8px -7px #000000, 0px 0px 8px -3px #000000;
+}
+
+.Random_Button > button:hover {
+  background-color: #dc0290;
+  transition: 0.4s ease;
+  transform: scale(103%);
+  color: white;
+}
+
+@media screen and (min-width: 360px) {
+  .Random_Joke_Infos > h2 {
+    margin: 0rem 2rem;
+  }
+
+  .Random_Joke_Infos > p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .Random_Button > button {
+    width: 19rem;
+    font-size: 1.15rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .Random_Joke_Infos > h4,
+  .Random_Joke_Infos > h2 {
+    margin-bottom: 3rem;
+  }
+
+  .Random_Joke_Infos > h4 {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Random_Joke_Infos > h4 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .Random_Joke_Infos > h2 {
+    font-size: 2rem;
+  }
+
+  .Random_Joke_Infos > p {
+    font-size: 1.7rem;
+  }
+
+  .Random_Button > button {
+    font-size: 1.7rem;
+    width: 35rem;
+  }
+}
