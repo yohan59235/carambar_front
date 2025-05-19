@@ -9,6 +9,7 @@ import Home from "../src/Pages/Home/Home";
 import JokesList from "../src/components/JokesList/JokesList";
 import AddJokesForm from "./components/AddJokesForm/AddJokesForm";
 import JokesCategory from "./components/JokesCategory/JokesCategory";
+import JokesByCategory from "./components/JokesByCategory/JokesByCategory";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "/blague", element: <JokesList /> },
       { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
       { path: "/Catégorie", element: <JokesCategory /> },
+      { path: "/categorie/:nom", element: <JokesByCategory /> },
     ],
   },
 ]);

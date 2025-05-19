@@ -22,6 +22,7 @@ function AddJokesForm() {
         reponse: addJoke.reponse,
       })
       .then((response) => {
+        alert("Blague ajoutée avec succès !");
         console.info(response);
       })
       .catch((err) => console.error(err));
