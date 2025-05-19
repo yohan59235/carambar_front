@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/blague", element: <JokesList /> },
+      { path: "/Blague", element: <JokesList /> },
       { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
       { path: "/Catégorie", element: <JokesCategory /> },
       { path: "/categorie/:nom", element: <JokesByCategory /> },

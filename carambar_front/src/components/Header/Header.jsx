@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
-  // const refreshPage = () => {
-  //   window.location.reload();
-  // };
-
   return (
     <div className="Header_Container">
       <Link to="/">
-        <button type="button">Blagues aléatoires</button>
+        <button type="button">Retour aux blagues aléatoires</button>
       </Link>
       <div>
-        <p>Choisis une blague par son numéro</p> <input type="number" />
+        <input type="text" placeholder="Choisis un numéro de blague" />
+        <input type="submit" value="Rechercher" />
       </div>
+      <Link to="/Blague">
+        <input type="button" value="Afficher toutes les blagues" />
+      </Link>
       <Link to="/Catégorie">
         <input type="button" value="Afficher les blagues par catégories" />
       </Link>
