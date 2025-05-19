@@ -12,19 +12,24 @@ import JokesCategory from "./components/JokesCategory/JokesCategory";
 import JokesByCategory from "./components/JokesByCategory/JokesByCategory";
 import JokesById from "./components/JokesById/JokesById";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      element: <App />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/Blague", element: <JokesList /> },
+        { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
+        { path: "/Catégorie", element: <JokesCategory /> },
+        { path: "/categorie/:nom", element: <JokesByCategory /> },
+        { path: "/Blague/id", element: <JokesById /> },
+      ],
+    },
+  ],
   {
-    element: <App />,
-    children: [
-      { path: "/", element: <Home /> },
-      { path: "/Blague", element: <JokesList /> },
-      { path: "/Ajouter_une_blague", element: <AddJokesForm /> },
-      { path: "/Catégorie", element: <JokesCategory /> },
-      { path: "/categorie/:nom", element: <JokesByCategory /> },
-      { path: "/Blague/id", element: <JokesById /> },
-    ],
-  },
-]);
+    basename: "/carambar_front",
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
