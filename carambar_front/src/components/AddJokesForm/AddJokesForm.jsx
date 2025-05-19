@@ -29,31 +29,36 @@ function AddJokesForm() {
   };
 
   return (
-    <div>
+    <div className="Form_Add_Joke">
       <form onSubmit={submitJokes}>
-        <input
-          type="text"
-          name="categorie"
-          placeholder="Ajoute une catégorie de blague"
-          onChange={formInfos}
-          value={addJoke.categorie}
-        />
-        <input
-          type="text"
-          name="question"
-          placeholder="Écris la question"
-          onChange={formInfos}
-          value={addJoke.question}
-        />
-
-        <input
-          type="text"
-          name="reponse"
-          placeholder="Écris la réponse"
-          onChange={formInfos}
-          value={addJoke.reponse}
-        />
-        <input type="submit" value="Enregistre ta blague" />
+        <div>
+          <input
+            type="text"
+            name="categorie"
+            placeholder="Ajoute une catégorie de blague"
+            onChange={formInfos}
+            value={addJoke.categorie}
+          />
+          <input
+            type="text"
+            name="question"
+            placeholder="Écris la question"
+            onChange={formInfos}
+            value={addJoke.question}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="reponse"
+            placeholder="Écris la réponse"
+            onChange={formInfos}
+            value={addJoke.reponse}
+          />
+          <div className="Submit_Button">
+            <input type="submit" value="Enregistre ta blague" />
+          </div>
+        </div>
       </form>
     </div>
   );
