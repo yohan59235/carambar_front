@@ -1,4 +1,230 @@
-/* .Header_Container {
-    height: 100vh;
-    background-color: aquamarine;
-} */
+.Header_Container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.Header_Image > img {
+  width: 100%;
+  margin-bottom: -0.3rem;
+}
+
+.First_Line_Onglets {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Second_Line_Onglets {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Last_Line_Onglets {
+  display: flex;
+  justify-content: center;
+}
+
+.First_Line_Onglets > a > input,
+.Second_Line_Onglets > a > input {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 0.85rem;
+  border: none;
+  background-color: antiquewhite;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.Last_Line_Onglets > a > input {
+  width: 20rem;
+  height: 2.5rem;
+  border: none;
+  background-color: antiquewhite;
+}
+
+.First_Line_Onglets > a > input:hover,
+.Second_Line_Onglets > a > input:hover {
+  background-color: #dc0290;
+  transition: 0.4s ease;
+  transform: scale(103%);
+}
+
+.Last_Line_Onglets > a > input:hover {
+  background-color: #dc0290;
+  transition: 0.4s ease;
+  transform: scale(103%);
+}
+
+@media screen and (min-width: 360px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 11.25rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 22.5rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 11.7rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 23.4rem;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 12.2rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 24.4rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 13rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 26rem;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 13.4rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 26.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 24rem;
+    font-size: 1.5rem;
+    height: 3.2rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 48rem;
+    font-size: 1.5rem;
+    height: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 25rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 50rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 25.6rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 51.2rem;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 26.2rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 52.4rem;
+  }
+}
+
+@media screen and (min-width: 884px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input {
+    width: 27.6rem;
+  }
+
+  .Last_Line_Onglets > a > input {
+    width: 55.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Header_Container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Header_Image {
+    width: 60%;
+  }
+
+  .Header_Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .First_Line_Onglets,
+  .Second_Line_Onglets {
+    flex-direction: column;
+  }
+
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input,
+  .Last_Line_Onglets > a > input {
+    width: 25.6rem;
+    height: 4.28rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input,
+  .Last_Line_Onglets > a > input {
+    width: 32rem;
+    height: 5.3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input,
+  .Last_Line_Onglets > a > input {
+    width: 36rem;
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .First_Line_Onglets > a > input,
+  .Second_Line_Onglets > a > input,
+  .Last_Line_Onglets > a > input {
+    width: 46.7rem;
+    height: 6.35rem;
+  }
+
+  .Header_Image {
+    width: 55%;
+  }
+}
