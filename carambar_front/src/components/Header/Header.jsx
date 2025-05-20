@@ -6,7 +6,10 @@ function Header() {
   return (
     <div className="Header_Container">
       <div className="Header_Image">
-        <img src="src/assets/fond-ecran.jpg" alt="fond d'écran carambar" />
+        <img
+          src="https://static.comment-economiser.fr/images/photos_astuces/2025/01/171-blagues-carambar-qui-vont-vous-faire-rire-un-bon-coup.jpg"
+          alt="fond d'écran carambar"
+        />
       </div>
       <div className="Header_Links">
         <div className="First_Line_Onglets">
